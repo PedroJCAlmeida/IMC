@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2579BF"
+    android:padding="40px"
+    android:id="@+id/linearLayout1">
+
+    <TextView
+        android:text="Histórico"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:padding="40dp"
+        android:textColor="#0e0e58"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/txtHistorico" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:gravity="start"
+            android:text="Registo: "
+            android:textColor="#0e0e58"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNregisto"/>
+
+        <Spinner
+            android:tooltipText="Registos:"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout5" >
+    
+        <TextView
+            android:gravity="start"
+            android:text="ID: "
+            android:layout_marginTop="10dp"
+            android:textColor="#0e0e58"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNid"/>
+    <TextView
+            android:gravity="start"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textColor="#0e0e58"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtId"/>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Altura:  "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+
+        <EditText
+            android:hint=""
+            android:inputType="number"
+            android:textColor="#0e0e58"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="170.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAltura" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:text="Peso: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        
+
+        <EditText
+            android:hint=""
+            android:inputType="number"
+            android:textColor="#0e0e58"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="170.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPeso" />
+    </LinearLayout>
+   
+     <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsuario" />
+    
+    
+    <TextView
+        android:gravity="start"
+        android:text="IMC"
+        android:textColor="#0e0e58"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIMC" />
+
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        
+          <Button
+            android:text="Atualizar"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="40dp"
+            android:layout_width="121.5dp"
+            android:layout_height="38.5dp"
+            android:id="@+id/btnAtualizar"/>
+       
+        <Button
+        android:text="Eliminar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_width="121.5dp"
+        android:layout_height="38.5dp"
+        android:id="@+id/btnEliminar" />
+   
+    </LinearLayout>
+</LinearLayout>
+
+

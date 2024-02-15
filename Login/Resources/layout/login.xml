@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="80px" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170.5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:minWidth="10px"
+        android:minHeight="10px"
+        android:src="@drawable/logo" />
+    <TextView
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Calcular IMC"
+        android:textColor="#0e0e58"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCalcular" />
+    <TextView
+        android:gravity="center"
+        android:text="Bem-Vindo"
+        android:textStyle="bold"
+        android:textColor="#0e0e58"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTextoLogin"/>
+
+
+    <EditText
+        android:hint="Altura em CM"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="172.0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txtAltura" />
+    <EditText
+        android:hint="Peso em KG"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="172.0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txtPeso" />
+    <TextView
+        android:gravity="center"
+        android:text="Valor IMC"
+        android:textColor="#0e0e58"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIMC" />
+    <TextView
+        android:gravity="center"
+        android:text="Classificação Peso"
+        android:textColor="#0e0e58"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtClassificacao" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="Registar IMC"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="120.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegistrarIMC" />
+        <Button
+            android:text="Histórico"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textAlignment="center"
+            android:layout_marginLeft="40dp"
+            android:layout_width="120.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHistorico" />
+    </LinearLayout>
+
+</LinearLayout>
